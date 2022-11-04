@@ -38,3 +38,19 @@
   border-radius: 15px;
   padding: 30px;
 }
+
+.task{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid lightblue;
+  cursor: pointer;
+}
+
+.task:hover{
+  background-color: aliceblue;
+}
+
+.task.done span{
+  text-decoration: line-through;
+}
