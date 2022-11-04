@@ -15,6 +15,26 @@ Steps:
 const { createApp } = Vue;
 
 createApp({
+  data(){
+    return{
+      logoImg: 'logo.png',
+      task:[
+        {
+          text: 'fare i compiti',
+          done: false
+        },
+        {
+          text: 'fare la spesa',
+          done: false
+        },
+        {
+          text: 'salvare il mondo',
+          done: false
+        }
+      ]
+
+    }
+  },
   mounted(){
     
   }

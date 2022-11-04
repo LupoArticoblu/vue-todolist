@@ -23,7 +23,8 @@
     </div>
     <div class="list">
       <ul>
-        <li class="task">
+        <li v-for="(task, index) in tasks"
+        class="task">
           <span>Fare la spesa</span>
           <i class="fa-solid fa-xmark"></i>
         </li>
