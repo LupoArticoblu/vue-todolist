@@ -12,7 +12,12 @@ Steps:
 7. se l’elenco è vuoto non mostrare la lista ma mostrare il messaggio “Non ci sono task”*/
 
 
-const { createApp } = vue;
+const { createApp } = Vue;
 
+createApp({
+  mounted(){
+    
+  }
+}).mount('#app')
 
 
