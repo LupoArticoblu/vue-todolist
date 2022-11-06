@@ -18,6 +18,7 @@ createApp({
   data(){
     return{
       logoImg: 'logo.png',
+      errorString:'',
       task:[
         {
           text: 'fare i compiti',
@@ -33,6 +34,21 @@ createApp({
         }
       ]
 
+    }
+  },
+  methods:{
+    toggleDone(index){
+      removeTask(index){
+        console.log(index);
+        this.errorString ='';
+        if(this.tasks[index].done){
+          // rimuovo
+          this.errorString = 'Attenzione! Non si può eliminare il task se non è stato ancora fatto'
+          return;
+        }else{
+          console.log('rimuovo');
+        }
+      }
     }
   },
   mounted(){

@@ -20,14 +20,17 @@
     <div class="input">
       <input type="text" placeholder="Aggiungi una nuova missione!">
       <button>Aggiungi</button>
+      <p class="error"></p>
     </div>
     <div class="list">
       <ul>
         <li v-for="(task, index) in tasks"
         class="task"
+        @click="task.done = !task.done"
         :class="{'done': task.done}">
           <span>{{task.text}}</span>
-          <i class="fa-solid fa-xmark"></i>
+          <i
+          @click.stop="removeTask(index)" class="fa-solid fa-xmark"></i>
         </li>
       </ul>
       <!--<h3>Missione Compiuta!</h3>-->
