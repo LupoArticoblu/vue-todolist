@@ -19,7 +19,7 @@ createApp({
     return{
       logoImg: 'logo.png',
       errorString:'',
-      task:[
+      tasks:[
         {
           text: 'fare i compiti',
           done: false
@@ -38,7 +38,6 @@ createApp({
   },
   methods:{
     toggleDone(index){
-      removeTask(index){
         console.log(index);
         this.errorString ='';
         if(this.tasks[index].done){
@@ -51,9 +50,8 @@ createApp({
       }
     }
   },
-  mounted(){
-    
-  }
-}).mount('#app')
+  
+  
+).mount('#app')
 
 
